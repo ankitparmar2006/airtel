@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- style css link -->
+    <!-- style scss link -->
 
     <link rel="stylesheet" href="style.css">
 
@@ -32,9 +32,9 @@
             </ul>
 
         </nav>
-        <hr>
+      
     </header>
-
+<hr>
     
   <!-- /* navbar cording end from here  */ -->
 
@@ -44,6 +44,14 @@
   <!-- main section start from here  -->
 
     <section id="home">
+
+      <div class="home-text">
+      <h1>Spam protection now live <br>
+         on Airtel</h1>
+
+      <p>without any app or extra charge</p>
+      <button class="home-btn">KNOW MORE</button>
+    </div>
 
 
     </section>
@@ -60,38 +68,42 @@
         <h1>Recharge or pay bills</h1>
     
         <div class="recharge-btn">
-            <button>Prepaid</button>
-            <button>Postpaid</button>
-            <button>DTH</button>
-            <button>Wi-Fi</button>
-            <button>Airtel Black</button>
+            <button class="recharge-btn2"> 
+              <i class="fa-solid fa-sim-card"></i> Prepaid</button>
+            <button class="recharge-btn2" > <i class="fa-solid fa-sd-card"></i> Postpaid</button>
+            <button class="recharge-btn2"> <i class="fa-solid fa-satellite-dish"></i> DTH</button>
+            <button class="recharge-btn2">  <i class="fa-solid fa-wifi"></i> Wi-Fi</button>
+            <button class="recharge-btn2">   <i class="fa-solid fa-signal"></i> Airtel Black</button>
+            
             <br>
 
-            <input type="number" placeholder="                            Enter    Number">
+            <input class="recharge-input" type="number" placeholder="                    Enter Mobile Number ">
             <br>
             <button class="recharge-pay">PAY BILL</button>
         </div>
 
-
-        <!-- recharge offer start from here   -->
-
-        <div class="recharge-offer">
-
-            <img src="./images/offer-icon.png" alt=""> <p>Free 2 GB data coupons on select recharges via Thanks app
-             <button>GET APP</button>
-             </p>
-        </div>
-
-        
-        <!-- recharge offer end  from here  -->
-
 </section>
 
-<!-- Recharge and play bills end from here  -->
+<!-- Recharge and play bills end from here  --> 
+
+
+        <!-- recharge offer start from here   -->
+<section id="recharge-offer-top">
+        <div class="recharge-offer">
+          <div><img src="./images/offer-icon.png" alt=""></div>
+          <div>
+          <p> Free 2 GB data coupons on select recharges via Thanks app
+           &nbsp; &nbsp;<button class="offer-btn">GET APP</button>
+           </p>
+          </div>
+      </div>
+    </section>
+      
+      <!-- recharge offer end  from here  -->
 
   </main>
 
-  
+  <!-- <i class="fa-solid fa-helmet-safety"></i> -->
     
 </body>
 </html>
