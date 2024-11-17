@@ -3,12 +3,55 @@ $home-color:#292C31;
 $rechage-color:#E3E5FF;
 $offer-color: #fc0505;
 $offer-color2:#FF4949;
+$Recommended-color:#F7F7FA; 
+$boxp-color:#696B6F;
+$learn-color:#027BFC;
+$find-coloR:#F6F6F6;
+  
 
 // mixin property
 
 @mixin grid {
     display: grid;
   
+  }
+  @mixin heading {
+  
+      margin-left: 35%;
+      margin-top: 20px;
+      font-size: 32px;
+      color:$home-color;
+      
+  
+  }
+
+  @mixin btn{
+    margin-top: 20px;
+    height: 40px;
+    width: 110px;
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    border-radius:10px ;
+    margin-top: 30px;
+  }
+
+  @mixin hover{
+
+    height: 41px;
+    width: 111px;
+    background-color:$home-color;
+
+
+  }
+
+  @mixin learn {
+    color: $learn-color ;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 12px;
+
+    margin-left: 20px;
   }
 
 * {
@@ -123,15 +166,13 @@ $offer-color2:#FF4949;
 
 
 /* <!-- Recharge and play bills start from here  --> */
+
 #recharge {
     width: 100%;
     height: 60vh;
     h1 {
-        margin-left: 38%;
-        margin-top: 20px;
-        font-size: 32px;
-        color:$home-color;
-        
+      
+        @include heading()
     }
     .recharge-btn {
         margin-left: 25%;
@@ -142,7 +183,7 @@ $offer-color2:#FF4949;
             height: 35px;
             width: 110px;
             border-radius: 50px;
-            background-color: #E3E5FF;
+            // background-color: #E3E5FF;
             border: 2px solid #E3E5FF;
           
           
@@ -151,6 +192,10 @@ $offer-color2:#FF4949;
             background-color: black;
             color: white;
             font-size: 15px;
+            // i {
+            //  display: block;
+            //   border: none;
+            // }
           }
  
         //   input button and hover work
@@ -234,3 +279,409 @@ $offer-color2:#FF4949;
 
     // offer work end here
 
+
+    
+  // <!-- buy a new connection cording start from here  -->
+
+
+
+  #buy {
+    width: 100%;
+    height: 60vh;
+
+    .buy-words {
+      display: grid;
+      grid-template-columns: auto auto auto auto auto auto ;
+      justify-content: center;
+      font-size: 12px;
+      gap: 70px;
+      
+      }
+     
+    h1 {
+        margin-left: 35%;
+        margin-top: 20px;
+        font-size: 32px;
+        color:$home-color;
+        
+    }
+    .buy-btn1 {
+        margin-left: 20%;
+        margin-top: 40px;
+      
+
+        
+
+        .buy-btn2 {
+ 
+            height: 56px;
+            width: 56px;
+      
+            border-radius: 50px;
+            background-color: #E3E5FF;
+            border: 1px solid #E3E5FF;
+            margin: 25px;
+            font-size: 25px;
+          
+          
+          }
+          .buy-btn2:hover {
+            border: 2px solid #d5d8fb;
+          }
+        }
+      }
+
+
+
+// this is my connection box
+  #connection {
+    width: 540px;
+    height: 90px;
+    background-color:$offer-color2;
+    color: $rechage-color;
+    margin-top: 50px;
+    border-radius: 10px;
+    margin-left: 25%;
+    margin-top: -50px;
+
+    .connection-text {
+        display: grid;
+        grid-template-columns: auto auto;
+       justify-content: center;
+    
+      gap: 20px;
+        img {
+            width: 60px;
+         padding-top: 18px;
+            
+        }
+        p {
+            font-size: 14px;
+            padding-top: 30px;
+            // get app button 
+
+            .connection-btn {
+               width: 102px;
+            height: 27px;
+            border-radius: 20px;
+            font-weight: bolder;
+            color: white;
+            background-color: $offer-color2;
+            border: white 1px solid;
+            font-size: 11px;
+            
+            }
+            .connection-btn:hover {
+             background-color: $home-color;
+            }
+
+        }
+
+    }
+   
+}
+
+  
+  // <!-- buy a new connection cording end from here  -->
+
+
+  
+  // <!-- recomanded for you work start from here  -->
+
+
+
+  #Recommended-main1 {
+    width: 100%;
+    height: 546px;
+    background-color:$Recommended-color ;
+   margin-top: 60px; 
+
+   h1 {
+    margin-left: 35%;
+      padding-top: 70px;
+      font-size: 32px;
+      color:$home-color;
+      
+  
+    
+   }
+
+   .Recommended-main2 {
+
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 40px;
+     justify-content: space-evenly;
+
+    
+    .box-1 {
+
+      width: 444px;
+      height: 376px;
+      border: 1px solid $boxp-color;
+      border-radius: 10px;
+
+      .img1 {
+        border-radius: 8px;
+        height: 50%;
+        width: 100%;
+
+      }
+
+      .box-text {
+        margin-left: 30px;
+
+      
+
+
+     
+
+      
+      h5 {
+        color: $offer-color2 ;
+        padding-top: 13px;
+      }
+
+      p {
+        margin-top: 10px;
+
+        span {
+          font-weight: bolder;
+        }
+
+        .up {
+          color: $boxp-color;
+          font-size: 12px;
+        }
+      }
+     .recomanded-btn {
+     
+        @include btn()
+    }
+    .recomanded-btn:hover {
+      @include hover()
+
+    }
+
+    
+    a {
+      @include learn()
+        }
+
+  }
+
+    }
+
+    .box-2 {
+
+      width: 444px;
+      height: 376px;
+      border: 1px solid $boxp-color;
+      border-radius: 10px;
+
+      .img2 {
+        border-radius: 10px;
+        height: 50%;
+        width: 100%;
+
+      }
+
+      .box-text2 {
+        margin-left: 30px;
+      
+
+      
+
+      
+
+      
+      h5 {
+        color: $offer-color2 ;
+        padding-top: 13px;
+      }
+
+      p {
+        margin-top: 10px;
+
+        span {
+          font-weight: bolder;
+        }
+
+        .up {
+          color: $boxp-color;
+          font-size: 12px;
+        }
+      }
+     .recomanded-btn {
+     
+        @include btn()
+    }
+    .recomanded-btn:hover {
+      @include hover()
+
+    }
+
+    a {
+  @include learn()
+    }
+    
+  }
+      
+    }
+
+   }
+  
+  }
+
+  
+  // <!-- recomanded for you work end here  -->
+
+
+  // <!-- find the best wi-fi plan for you  -->
+
+  #best-plan {
+
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/wifiimg.png);
+     background-size: contain;
+      background-repeat: no-repeat;
+      position: relative;
+
+
+      .best-plan2{
+        width: 320px;
+        height: 340px;
+       
+       margin-left: 387px;
+       margin-top: 78px;
+       border-radius: 10px;
+       background-color: white;
+
+       h5 {
+     
+        padding-top: 20px;
+        margin-left: 40%;
+        color: $offer-color2;
+       }
+
+      .best-planp1{
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 25px;
+        padding-left: 40px;
+       }
+
+       .best-planp2 {
+        font-size: 14px;
+        margin-left: 31%;
+        margin-top: 10px;
+       }
+
+
+       .best-plan-btn  {
+
+        margin-top: 20px;
+        margin-left: 60px;
+
+       
+       button {
+ 
+        height: 38px;
+        width: 150px;
+        border-radius: 50px;
+        background-color: $rechage-color;
+        border: 2px solid #e3e5ffc1;
+        margin: 10px;     
+        margin-left: 25px; 
+      
+      }
+      button:hover {
+        background-color:  #e3e5ffc1;
+        color: black;
+        font-size: 15px;
+      }
+      }
+       
+      }
+     
+  
+// button cording start from here
+
+
+    
+
+  }
+
+
+
+  
+  // <!-- find the best wi-fi plan for you  -->
+
+
+
+  
+  // <!-- for your bussines cordin start from here -->
+
+#bussines {
+  width: 100%;
+  height: 70vh;
+  background-color: $Recommended-color;
+  
+
+  .bussines-text {
+    padding-top: 30px;
+
+    h1 {
+      
+      margin-left: 2%;
+      margin-top: 20px;
+      font-size: 32px;
+      color:$home-color;
+    }
+
+    p {
+      color: $boxp-color;
+     margin-top: 20px;
+     margin-left: 2%;
+    }
+
+    a {
+      color: $learn-color;
+      font-weight: bold;
+      font-size: 12px;
+      margin-left: 2%;
+     text-decoration: none;
+    }
+
+  }
+
+
+
+
+
+
+// <!-- four box cording start from here -->
+
+#four-box1 {
+ 
+
+  .four-box2 {
+
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+    .four-1 {
+      width: 210px;
+      height: 130px;
+      border: 2px solid red;
+      border-radius: 10px;
+    }
+  }
+
+}
+
+}
+
+  
+  // <!-- for your bussines cordin end here -->
