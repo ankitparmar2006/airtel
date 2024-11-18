@@ -7,6 +7,7 @@ $Recommended-color:#F7F7FA;
 $boxp-color:#696B6F;
 $learn-color:#027BFC;
 $find-coloR:#F6F6F6;
+$footer-color:#FFFFFF;
   
 
 // mixin property
@@ -65,7 +66,6 @@ $find-coloR:#F6F6F6;
   
 
   /* navbar cording start from here  */
-
 
   #navbar {
     width: 100%;
@@ -625,7 +625,7 @@ $find-coloR:#F6F6F6;
 
 #bussines {
   width: 100%;
-  height: 70vh;
+  height: 40vh;
   background-color: $Recommended-color;
   
 
@@ -656,7 +656,7 @@ $find-coloR:#F6F6F6;
 
   }
 
-
+}
 
 
 
@@ -664,6 +664,10 @@ $find-coloR:#F6F6F6;
 // <!-- four box cording start from here -->
 
 #four-box1 {
+  width: 100%;
+  height: 50vh;
+  background-color: $Recommended-color;
+  
  
 
   .four-box2 {
@@ -671,17 +675,546 @@ $find-coloR:#F6F6F6;
     display: grid;
     grid-template-columns: auto auto auto auto;
     justify-content: space-evenly;
+
+
     .four-1 {
-      width: 210px;
-      height: 130px;
-      border: 2px solid red;
-      border-radius: 10px;
+      width: 220px;
+      height: 140px;
+      border: 1px solid $boxp-color;
+      border-radius: 10px; 
+      img {
+
+        width: 38px;
+        height: 38px;
+        margin-top: 10px;
+        margin-left: 10px;
+        border-radius: 10px;
+      }
+      p {
+        color: $home-color;
+        font-weight: bolder;
+        margin-left: 10px;
+        a {
+          i {
+            color: $learn-color;
+          }
+        }
+       
+      }
+
+      .four-p1 {
+        font-size: 12px;
+        margin: 10px;
+      }
+
+      
+
+   
     }
+// box2
+    .four-2 {
+      width: 220px;
+      height: 140px;
+      border: 1px solid $boxp-color;
+      border-radius: 10px; 
+      img {
+
+        width: 38px;
+        height: 38px;
+        margin-top: 10px;
+        margin-left: 10px;
+        border-radius: 10px;
+      }
+      p {
+        color: $home-color;
+        font-weight: bolder;
+        margin-left: 10px;
+        a {
+          i {
+            color: $learn-color;
+          }
+        }
+       
+      }
+
+      .four-p2 {
+        font-size: 12px;
+        margin: 10px;
+      }
+
+      
+
+   
+    }
+
+    // box3
+
+    .four-3 {
+      width: 220px;
+      height: 140px;
+      border: 1px solid $boxp-color;
+      border-radius: 10px; 
+      img {
+
+        width: 38px;
+        height: 38px;
+        margin-top: 10px;
+        margin-left: 10px;
+        border-radius: 10px;
+      }
+      p {
+        color: $home-color;
+        font-weight: bolder;
+        margin-left: 10px;
+        a {
+          i {
+            color: $learn-color;
+          }
+        }
+       
+      }
+
+      .four-p3 {
+        font-size: 12px;
+        margin: 10px;
+      }
+
+      
+
+   
+    }
+
+    // box 4
+
+    .four-4 {
+      width: 220px;
+      height: 140px;
+      border: 1px solid $boxp-color;
+      border-radius: 10px; 
+      img {
+
+        width: 38px;
+        height: 38px;
+        margin-top: 10px;
+        margin-left: 10px;
+        border-radius: 10px;
+      }
+      p {
+        color: $home-color;
+        font-weight: bolder;
+        margin-left: 10px;
+        a {
+          i {
+            color: $learn-color;
+          }
+        }
+       
+      }
+
+      .four-p4 {
+        font-size: 12px;
+        margin: 10px;
+      }
+
+      
+
+   
+    }
+
+  }
+
+}
+
+  
+  // <!-- for your bussines cordin end here -->
+
+
+  
+// <!-- footer work start from here -->
+#footer-top {
+  
+.footer {
+  
+  background-color:$footer-color ;
+  width: 100%;
+  height: 650px;
+ 
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-around;
+
+
+  ul {
+    margin-top: 50px;
+ p {
+  font-weight: bold;
+  font-size: 12px;
+  color: $home-color;
+ }
+    
+      a {
+        display: block;
+        text-decoration: none;
+        margin-top: 20px;
+        color: $home-color;
+        font-size: 14px;
+      }
+      a:hover {
+        color: $offer-color2;
+      }
+    }
+  
+
+
+}
+
+#footer-2 {
+
+  height: 60px;
+  .footer-div {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    margin-top: 25px;
+    justify-content: space-around;
+a {
+   .airtel-img {
+    width: 24px;
+   }
+  }
+
+  img {
+    width: 80px;
+  }
+
+  div {
+    p {
+      font-size: 14px;
+      color: $boxp-color;
+    }
+  }
+  }
+
+  .footer-icons {
+    i {
+      color: black;
+    }
+    i:hover {
+      font-size: 17px;
+    }
+
+  }
+  button {
+    width: 144px;
+    height: 36px;
+    border-radius: 10px;
+  }
+  button:hover {
+    border: 3px solid $boxp-color;
+  }
+
+}
+
+// footer cording 3
+#footer-3 {
+  height: 70px;
+  background-color: $Recommended-color;
+  .footer-3p {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto ;
+    margin-top: 20px;
+    justify-content: space-around;
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+  }
+  .copy-right {
+    margin-top: 20px;
+    margin-left: 39%;
+    font-size: 10px;
+    color: $home-color;
+  }
+}
+}
+// =====================================        now responsive work start          ======================
+
+
+@media (max-width:450px) {
+
+  
+
+  /* navbar cording start from here  */
+
+  #navbar {
+   width: 100%;
+    height: 55px;
+    display: grid;
+    align-items: center;
+    nav {
+        ul {
+            gap: 20px ;
+            padding-left: 20px;
+          
+           }
+    }
+     }
+    
+       
+  /* navbar cording end from here  */
+
+
+
+  // recharge or pay bills
+
+  
+#recharge {
+ 
+  h1 {
+    margin-left: 30px;
+    font-size: 20px;
+  }
+  
+  .recharge-btn {
+    margin-left: 2%;
+    margin-top: 30px;
+
+    input {
+      height: 30px;
+      margin-top: 15px;
+      margin-left: 15%;
+      width: 280px;
+      
+      
+      }
+
+      .recharge-pay {
+        width: 280px;
+        height: 30px;
+       margin-left: 15%;
+       margin-top: 15px;
+     
+      }
+
+    
+      }
+
+    
+}
+
+
+
+    // offer work start from here
+
+    #recharge-offer-top {
+   
+
+      .recharge-offer {
+          display: grid;
+          grid-template-columns: auto auto;
+         justify-content: center;
+        padding-top: 10px;
+        gap: 20px;
+          img {
+              width: 20px;
+              
+          }
+          p {
+              font-size: 11px;
+              // get app button 
+
+              .offer-btn {
+                 width: 60px;
+              
+                }
+              }
+            }
+          }
+
+
+          
+    
+  // <!-- buy a new connection cording start from here  -->
+
+
+
+  #buy {
+   
+    height: 400px;
+
+    
+    .buy-words {
+      display: none;
+      
+      }
+
+     
+    h1 {
+        margin-left: 30px;
+        font-size: 20px;
+       
+        
+    }
+    .buy-btn1 {
+        margin-left: 40px;
+        margin-top: 30px;
+      
+        }
+      }
+
+
+      
+// this is my connection box
+  #connection {
+    width: 360px;
+    margin-left: 2%;
+    
+}
+
+
+
+  
+  // <!-- recomanded for you work start from here  -->
+
+
+
+  #Recommended-main1 {
+    height: 900px;
+
+   h1 {
+    margin-left: 30px;
+      
+      font-size: 20px;
+    
+   }
+
+   .Recommended-main2 {
+
+    display: grid;
+    grid-template-columns: auto ;
+  
+
+    
+    .box-1 {
+
+      width: 400px;
+      height: 330px;
+      
+
+    }
+  
+    .box-2 {
+
+      width: 400px;
+      height: 330px;
+   
+   }
+  
+   }
+  
+
+  // <!-- recomanded for you work end here  -->
+
+
+}
+
+
+
+
+  // <!-- find the best wi-fi plan for you  -->
+
+  #best-plan {
+
+
+
+      .best-plan2{
+        width: 280px;
+        height: 300px;
+       
+       margin-left: 50px;
+       margin-top: 0px;
+     
+      }
+    }
+
+
+    
+
+// <!-- four box cording start from here -->
+
+#four-box1 {
+  
+  height: 580px;
+  margin-top: 20px;
+ 
+  
+ 
+
+  .four-box2 {
+
+    display: grid;
+    grid-template-columns: auto ;
+    justify-content: space-evenly;
+
+  }
+}
+
+
+  
+// <!-- footer work start from here -->
+#footer-top {
+  
+  .footer {
+    
+    height: 720px;
+  }  
+
+  
+
+#footer-2 {
+
+  height: 60px;
+  .footer-div {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    margin-top: 25px;
+    justify-content: space-around;
+a {
+   .airtel-img {
+    width: 20px;
+   }
+  }
+
+  img {
+    width: 50px;
+  }
+
+  div {
+    p {
+      font-size: 14px;
+      color: $boxp-color;
+    }
+  }
+  }
+
+  .footer-icons {
+    i {
+      color: black;
+    }
+    i:hover {
+      font-size: 17px;
+    }
+
+  }
+  button {
+    width: 110px;
+    height: 25px;
+    border-radius: 10px;
   }
 
 }
 
 }
 
-  
-  // <!-- for your bussines cordin end here -->
+
+}
