@@ -916,7 +916,7 @@ a {
 
 // footer cording 3
 #footer-3 {
-  height: 70px;
+  height: 90px;
   background-color: $Recommended-color;
   .footer-3p {
     display: grid;
@@ -929,12 +929,24 @@ a {
       text-decoration: none;
     }
   }
+  .last-div {
+    display: grid;
+    grid-template-columns: auto auto; 
+    margin-top: 15px;
+    
+    .last-img {
+      width: 120px;
+      border-radius: 20px;
+      margin-left: 50px;
+     
+    }
   .copy-right {
-    margin-top: 20px;
-    margin-left: 39%;
+    margin-top: 5px;
+    margin-left: -420px;
     font-size: 10px;
     color: $home-color;
   }
+}
 }
 }
 // =====================================        now responsive work start          ======================
@@ -1213,8 +1225,14 @@ a {
   }
 
 }
+}
+
+// footer cording 3
+#footer-3 {
+display: none;
+}
 
 }
 
 
-}
+// ==========================         responsive work done
